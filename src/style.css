@@ -1,0 +1,52 @@
+/* create a new css file, example /src/style.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.notification-bell {
+  position: relative;
+}
+
+.bell-icon {
+  cursor: pointer;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.notification-list {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.notification-item {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.batch-number {
+  font-size: 12px;
+  color: grey;
+  margin-top: 5px;
+}
