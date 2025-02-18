@@ -61,3 +61,176 @@
   z-index: 9999;
   max-width: 300px;
 }
+/* ============layout=============== */
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+}
+/* src/components/Header.css */
+.header {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul li {
+    margin: 5px 0;
+  }
+}
+/* src/components/Footer.css */
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul li {
+    margin: 5px 0;
+  }
+}
+/* src/components/Footer.css */
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #00aaff; /* Change color on hover */
+}
+
+.social-icon i {
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    flex-direction: column;
+  }
+
+  .social-icon {
+    margin: 5px 0;
+  }
+}
+/* =========slider===== */
+/* src/components/ImageSlider.css */
+.slider-container {
+  width: 100%;
+  max-width: 800px; /* Adjust the max-width as per your needs */
+  margin: 0 auto;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional rounded corners for the images */
+}
+/* ============table===== */
+/* src/App.css */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 200px;
+}

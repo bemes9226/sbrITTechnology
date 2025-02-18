@@ -1,12 +1,46 @@
+// src/components/Footer.js
 import React from "react";
 
-type Props = {};
-
-export const Footer = (props: Props) => {
+export const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white p-4 text-center">
-      <p>&copy; {new Date().getFullYear()} My Website. All rights reserved.</p>
-      <a href="djkld">lkdkfjkvkldfsjkld</a>
+    <footer className="footer">
+      <div className="social-icons">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+        >
+          <i className="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+        >
+          <i className="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+        >
+          <i className="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+        >
+          <i className="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 SBR IT Solution. All Rights Reserved.</p>
     </footer>
   );
 };
+
+export default Footer;

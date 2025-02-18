@@ -1,28 +1,24 @@
+// src/components/Header.js
 import React from "react";
+import { Link } from "react-router-dom";
 
-type Props = {};
-
-export const Header = (props: Props) => {
+export const Header = () => {
   return (
-    <header className="bg-blue-600 text-white p-4">
-      <h1 className="text-xl font-bold">My Website</h1>
-      
-      <nav>
-        <ul className="flex space-x-4">
+    <header className="header">
+      <div className="logo">SBR IT Solution</div>
+      <nav className="nav">
+        <ul>
           <li>
-            <a href="/" className="hover:underline">
-              Home
-            </a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about" className="hover:underline">
-              About
-            </a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/contact" className="hover:underline">
-              Contact
-            </a>
+            <Link to="/services">Services</Link>
+          </li>
+          <li>
+            <Link to="/store">Store</Link>
           </li>
         </ul>
       </nav>

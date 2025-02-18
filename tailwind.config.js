@@ -9,8 +9,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require("@aegov/design-system"),
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
+    // require("@aegov/design-system"),
+    // require("@tailwindcss/typography"),
+    // require("@tailwindcss/forms"),
   ],
 };

@@ -6,7 +6,17 @@ import { ToastProvider } from "./Toast/ToastProvider";
 import { GlobalStyleProvider } from "./context/accessibility/AccessibilityProvider";
 import { GlobalStyles } from "./context/accessibility/GlobalStyles";
 //import reportWebVitals from './reportWebVitals';
+import { configureStore } from "@reduxjs/toolkit";
+import { Provider } from "react-redux";
+import likeReducer from "./store/likeReducer";
+import subscribeReducer from "./store/subscribeReducer";
 
+const store = configureStore({
+  reducer: {
+    likes: likeReducer,
+    subscriber: subscribeReducer,
+  },
+});
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -15,8 +25,9 @@ root.render(
     <ToastProvider>
       <GlobalStyleProvider>
         <GlobalStyles />
-
-        <App name={""} />
+        <Provider store={store}>
+          <App />
+        </Provider>
         {/* <AccessibilityControls /> */}
       </GlobalStyleProvider>
     </ToastProvider>

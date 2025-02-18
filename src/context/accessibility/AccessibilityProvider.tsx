@@ -20,7 +20,7 @@ const GlobalStyleContext = createContext({
     highligtedLinksProgress: 0,
     highligtedLinks: false,
     themeProgress: 0,
-    theme: "light",
+    theme: "",
     textAlign: "",
     textAlignProgress: 0,
   },
@@ -106,7 +106,7 @@ export const getThemeColor = (theme: string) => {
     case "theme3":
       return "#fff !important"; // white
     case "theme4":
-      return "#66ccff !important"; // Blue
+      return "#fff !important"; // Blue
     default:
       return ""; // Default white
   }
